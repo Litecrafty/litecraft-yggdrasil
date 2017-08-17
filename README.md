@@ -32,7 +32,7 @@ ygg.auth({
 ygg.refresh(oldtoken, clienttoken, function(err, newtoken, response body){});
 
 //Validate an accessToken
-ygg.validate(token, function(err){});
+ygg.validate(token, function(isValid){});
 
 //Invalidate all accessTokens
 ygg.signout(username, password, function(err));
@@ -62,7 +62,7 @@ import { Client as ygg, Server as yggServ } from 'yggdrasil/es6'
 
 // Use it like you normally would.
 
-ygg.validate(token, function(err){})
+ygg.validate(token, function(isValid){})
 
 yggServ.join(token, profile, serverid, sharedsecret, serverkey, function(err, response body){});
 ```
