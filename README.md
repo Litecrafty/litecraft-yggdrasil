@@ -1,12 +1,6 @@
-# yggdrasil
-[![NPM Link](https://img.shields.io/npm/v/yggdrasil.svg?style=plastic)](https://www.npmjs.com/package/yggdrasil)
-[![Build Status](http://img.shields.io/travis/zekesonxx/node-yggdrasil.svg?style=plastic)](https://travis-ci.org/zekesonxx/node-yggdrasil)
+# Litecraft Node.js yggdrasil
 
 A Node.js client for doing requests to yggdrasil, the Mojang authentication system, used for Minecraft and Scrolls.
-There's already one other client out there (at the time of writing) but I don't like it, so I wrote this one.
-
-node-yggdrasil was originally made because I was messing around with trying to make a Minecraft server in JS. Never really got anywhere with it.
-However, the folks over at [PrismarineJS](https://github.com/PrismarineJS/) have gotten quite far with it, and use this library in their project.
 
 # Usage
     $ npm install yggdrasil
