@@ -3,12 +3,12 @@
 A Node.js client for doing requests to yggdrasil, the Mojang authentication system, used for Minecraft and Scrolls.
 
 # Usage
-    $ npm install yggdrasil
+    $ npm install litecraft-yggdrasil
 
 ## Client
 ```js
 //init
-var ygg = require('yggdrasil')({
+var ygg = require('litecraft-yggdrasil')({
   //Optional settings object
   host: 'https://authserver.mojang.com' //Optional custom host. No trailing slash.
 });
