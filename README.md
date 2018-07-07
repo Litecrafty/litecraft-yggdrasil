@@ -1,5 +1,7 @@
 # Litecraft Node.js yggdrasil
 [![Build Status](https://travis-ci.org/Litecrafty/litecraft-yggdrasil.svg?branch=master)](https://travis-ci.org/Litecrafty/litecraft-yggdrasil)
+[![npm](https://img.shields.io/npm/v/litecraft-yggdrasil.svg)](https://www.npmjs.com/package/litecraft-yggdrasil)
+[![npm](https://img.shields.io/npm/dy/litecraft-yggdrasil.svg)](https://www.npmjs.com/package/litecraft-yggdrasil)
 
 A Node.js client for doing requests to yggdrasil, the Mojang authentication system, used for Minecraft and Scrolls.
 
@@ -9,7 +11,7 @@ A Node.js client for doing requests to yggdrasil, the Mojang authentication syst
 ## Client
 ```js
 //init
-var ygg = require('litecraft-yggdrasil')({
+const ygg = require('litecraft-yggdrasil')({
   //Optional settings object
   host: 'https://authserver.mojang.com' //Optional custom host. No trailing slash.
 });
@@ -21,7 +23,7 @@ ygg.auth({
   version: 1, //Agent version. Defaults to 1
   user: '', //Username
   pass: '' //Password
-}, function(err, data){});
+}, function(err, data) {});
 
 //Refresh an accessToken
 ygg.refresh(oldtoken, clienttoken, function(err, newtoken, response body){});
@@ -35,7 +37,7 @@ ygg.signout(username, password, function(err));
 
 ## Server
 ```js
-var yggserver = require('yggdrasil').server({
+const yggserver = require('yggdrasil').server({
   //Optional settings object
   host: 'https://authserver.mojang.com' //Optional custom host. No trailing slash.
 });
@@ -62,7 +64,5 @@ ygg.validate(token, function(isValid){})
 yggServ.join(token, profile, serverid, sharedsecret, serverkey, function(err, response body){});
 ```
 
-# Further Reading
+# See also
 * [Authentication protocol documentation](http://wiki.vg/Authentication)
-* [node-minecraft-protocol](https://github.com/PrismarineJS/node-minecraft-protocol), a Minecraft client and server in Node.js
-* [prismarine-yggdrasil](https://github.com/PrismarineJS/prismarine-yggdrasil), another yggdrasil client that node-yggdrasil replaced (issue links: [prismarine-yggdrasil #2](https://github.com/PrismarineJS/prismarine-yggdrasil/issues/2), [node-minecraft-protocol #117](https://github.com/PrismarineJS/node-minecraft-protocol/issues/117)).
