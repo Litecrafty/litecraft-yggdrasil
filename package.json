@@ -1,7 +1,7 @@
 {
   "name": "litecraft-yggdrasil",
   "version": "2.0.3",
-  "author": "Zeke Sonxx <zeke@zekesonxx.com>; KernelFreeze <kernelfreeze@outlook.com>",
+  "author": "Raúl Salas <raulsalas.martin@gmail.com>; KernelFreeze <kernelfreeze@outlook.com>",
   "description": "Mojang authentication (Yggdrasil) client",
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha -R spec",
