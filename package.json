@@ -1,6 +1,6 @@
 {
   "name": "litecraft-yggdrasil",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "author": "Zeke Sonxx <zeke@zekesonxx.com>; KernelFreeze <kernelfreeze@outlook.com>",
   "description": "Mojang authentication (Yggdrasil) client",
   "scripts": {
@@ -21,17 +21,19 @@
     "authentication"
   ],
   "dependencies": {
-    "phin": "^2.2.1",
-    "uuid": "^3.1.0"
+    "phin": "^2.9.0",
+    "uuid": "^3.3.2"
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.4.1",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1",
-    "mocha": "^3.5.0",
-    "nock": "^9.0.14",
-    "should": "^11.2.1"
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "mocha": "^5.2.0",
+    "nock": "^9.4.1",
+    "should": "^13.2.1"
   }
 }

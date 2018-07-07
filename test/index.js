@@ -60,7 +60,7 @@ describe('utils', function () {
     })
 
     it('should handle negative hashes ending with a zero byte without crashing', function () {
-      utils.mcHexDigest(Buffer([-1, 0])).should.equal('-100')
+      utils.mcHexDigest(Buffer.from([-1, 0])).should.equal('-100')
     })
   })
 })
@@ -169,8 +169,8 @@ describe('Yggdrasil', function () {
         errorMessage: 'User is an egg'
       })
       ygg.validate('a magical key', function (err) {
-        err.should.be.an.instanceOf(Error)
-        err.message.should.equal('User is an egg')
+        err.should.be.an.instanceOf(Boolean)
+        err.should.equal(false)
         done()
       })
     })
