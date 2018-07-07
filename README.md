@@ -1,4 +1,5 @@
 # Litecraft Node.js yggdrasil
+[![Build Status](https://travis-ci.org/Litecrafty/litecraft-yggdrasil.svg?branch=master)](https://travis-ci.org/Litecrafty/litecraft-yggdrasil)
 
 A Node.js client for doing requests to yggdrasil, the Mojang authentication system, used for Minecraft and Scrolls.
 
